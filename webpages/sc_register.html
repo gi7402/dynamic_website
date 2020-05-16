@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myPageRegister</title>
+        <link rel="stylesheet" type="text/css" href="sc_style.css">
+        <script type="text/javascript">
+            function validate() {
+                
+                if(document.myForm.NAME.value==""){
+                    alert("Please provide your Name!!");
+                    document.myForm.NAME.focus();
+                    return false;
+                }
+                if(document.myForm.ADDRESS.value==""){
+                    alert("Please provide your Address!!");
+                    document.myForm.ADDRESS.focus();
+                    return false;
+                }
+                if(document.myForm.GENDER.value==""){
+                    alert("Please select your Gender!!");
+                    document.myForm.gender.focus();
+                    return false;
+                }
+                if(document.myForm.PHONENO.value==""){
+                    alert("Please provide your Phone Number!!");
+                    document.myForm.PHONENO.focus();
+                    return false;
+                }
+                if(document.myForm.EMAIL.value==""){
+                    alert("Please provide your EMail Id!!");
+                    document.myForm.EMAIL.focus();
+                    return false;
+                }
+                if(document.myForm.PASSWORD.value==""){
+                    alert("Please provide your Password!!");
+                    document.myForm.PASSWORD.focus();
+                    return false;
+                }
+                if(PASSWORD.length<8){
+                    alert("Password must be atleast 8characters long!!");
+                    document.myForm.PASSWORD.focus();
+                    return false;
+                }
+                
+                if(phone.length!=10){
+                    alert("Please enter 10 digit Phone Number Only!!")
+                }
+                    var emailID = document.myForm.EMAIL.value;
+                    atpos = emailID.indexOf("@");
+                    dotpos = emailID.lastIndexOf(".");
+                    if (atpos < 1 || ( dotpos - atpos < 2 )) {
+                        alert("Please enter correct email ID")
+                        document.myForm.EMail.focus() ;
+                        return false;
+                    }
+                    return( true );
+                }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="images/logo3.jpg">
+                </div>
+            </div>
+            <div class="boxr">
+                <img src="images/login2.jpg" class="login2">
+                <h1>Register Here</h1>
+                <form method="post" name="myForm" onsubmit="return(validate());">
+                    <h2>Name:<input type="text" name="NAME" placeholder="Enter Name"></h2>
+                    <h2>Address:<input type="textarea" name="ADDRESS" placeholder="Enter Address"></h2><br>
+                    <h2>Gender:
+                        <label for="female"><input type="radio" name="gender">Female</label>
+                        <label for="male"><input type="radio" name="gender">Male</label></h2>
+                    <h2>Phone Number:<input type="number" name="PHONENO" id="phone" placeholder="Enter Phone Number"></h2>
+                    <h2>E-Mail:<input type="email" name="EMAIL" placeholder="Enter Email ID"></h2>
+                    <h2>Password:<input type="password" name="PASSWORD" placeholder="Enter Password"></h2>
+                    <input type="submit" name="" value="Register"><br>
+                    <a href="sc_login.html">Back</a><br>
+                </form>
+            </div>
+        </header>
+    </body>
+</html>
