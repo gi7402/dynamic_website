@@ -68,16 +68,41 @@
                 <img src="images/login2.jpg" class="login2">
                 <h1>Register Here</h1>
                 <form method="post" name="myForm" onsubmit="return(validate());">
-                    <h2>Name:<input type="text" name="NAME" placeholder="Enter Name"></h2>
-                    <h2>Address:<input type="textarea" name="ADDRESS" placeholder="Enter Address"></h2><br>
-                    <h2>Gender:
-                        <label for="female"><input type="radio" name="gender">Female</label>
-                        <label for="male"><input type="radio" name="gender">Male</label></h2>
-                    <h2>Phone Number:<input type="number" name="PHONENO" id="phone" placeholder="Enter Phone Number"></h2>
-                    <h2>E-Mail:<input type="email" name="EMAIL" placeholder="Enter Email ID"></h2>
-                    <h2>Password:<input type="password" name="PASSWORD" placeholder="Enter Password"></h2>
-                    <input type="submit" name="" value="Register"><br>
-                    <a href="sc_login.html">Back</a><br>
+                    <table class="form_table">
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>Name:</h2></td>
+                            <td class="form_table_column2"><h2><input type="text" name="NAME" placeholder="Enter Name"></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>Address:</h2></td>
+                            <td class="form_table_column2"><h2><input type="textarea" name="ADDRESS" placeholder="Enter Address"></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>Gender:</h2></td>
+                            <td class="form_table_column3"><label for="female"><input type="radio" name="gender">Female</label></td>
+                            <td class="form_table_column3"><label for="male"><input type="radio" name="gender">Male</label></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>Phone Number:</h2></td>
+                            <td class="form_table_column2"><h2><input type="number" name="PHONENO" id="phone" placeholder="Enter Phone Number"></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>E-Mail:</h2></td>
+                            <td class="form_table_column2"><h2><input type="email" name="EMAIL" placeholder="Enter Email ID"></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1"><h2>Password:</h2></td>
+                            <td class="form_table_column2"><h2><input type="password" name="PASSWORD" placeholder="Enter Password"></h2></td>
+                        </tr>
+                        <tr class="form_table_row">
+                            <td class="form_table_column1">
+                                <input type="submit" name="" value="Register"><t>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form_table_column2"><a href="sc_login.html">Back</a><br></td>
+                        </tr>
+                    </table>    
                 </form>
             </div>
         </header>
